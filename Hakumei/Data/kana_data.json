@@ -1,0 +1,115 @@
+[
+  { "id": "a",   "unicode": "あ", "romaji": "a",   "type": "hiragana", "row": 1, "strokeCount": 3 },
+  { "id": "i",   "unicode": "い", "romaji": "i",   "type": "hiragana", "row": 1, "strokeCount": 2 },
+  { "id": "u",   "unicode": "う", "romaji": "u",   "type": "hiragana", "row": 1, "strokeCount": 2 },
+  { "id": "e",   "unicode": "え", "romaji": "e",   "type": "hiragana", "row": 1, "strokeCount": 2 },
+  { "id": "o",   "unicode": "お", "romaji": "o",   "type": "hiragana", "row": 1, "strokeCount": 3 },
+
+  { "id": "ka",  "unicode": "か", "romaji": "ka",  "type": "hiragana", "row": 2, "strokeCount": 2 },
+  { "id": "ki",  "unicode": "き", "romaji": "ki",  "type": "hiragana", "row": 2, "strokeCount": 4 },
+  { "id": "ku",  "unicode": "く", "romaji": "ku",  "type": "hiragana", "row": 2, "strokeCount": 1 },
+  { "id": "ke",  "unicode": "け", "romaji": "ke",  "type": "hiragana", "row": 2, "strokeCount": 3 },
+  { "id": "ko",  "unicode": "こ", "romaji": "ko",  "type": "hiragana", "row": 2, "strokeCount": 2 },
+
+  { "id": "sa",  "unicode": "さ", "romaji": "sa",  "type": "hiragana", "row": 3, "strokeCount": 3 },
+  { "id": "shi", "unicode": "し", "romaji": "shi", "type": "hiragana", "row": 3, "strokeCount": 1 },
+  { "id": "su",  "unicode": "す", "romaji": "su",  "type": "hiragana", "row": 3, "strokeCount": 2 },
+  { "id": "se",  "unicode": "せ", "romaji": "se",  "type": "hiragana", "row": 3, "strokeCount": 3 },
+  { "id": "so",  "unicode": "そ", "romaji": "so",  "type": "hiragana", "row": 3, "strokeCount": 1 },
+
+  { "id": "ta",  "unicode": "た", "romaji": "ta",  "type": "hiragana", "row": 4, "strokeCount": 4 },
+  { "id": "chi", "unicode": "ち", "romaji": "chi", "type": "hiragana", "row": 4, "strokeCount": 2 },
+  { "id": "tsu", "unicode": "つ", "romaji": "tsu", "type": "hiragana", "row": 4, "strokeCount": 1 },
+  { "id": "te",  "unicode": "て", "romaji": "te",  "type": "hiragana", "row": 4, "strokeCount": 1 },
+  { "id": "to",  "unicode": "と", "romaji": "to",  "type": "hiragana", "row": 4, "strokeCount": 2 },
+
+  { "id": "na",  "unicode": "な", "romaji": "na",  "type": "hiragana", "row": 5, "strokeCount": 4 },
+  { "id": "ni",  "unicode": "に", "romaji": "ni",  "type": "hiragana", "row": 5, "strokeCount": 3 },
+  { "id": "nu",  "unicode": "ぬ", "romaji": "nu",  "type": "hiragana", "row": 5, "strokeCount": 2 },
+  { "id": "ne",  "unicode": "ね", "romaji": "ne",  "type": "hiragana", "row": 5, "strokeCount": 2 },
+  { "id": "no",  "unicode": "の", "romaji": "no",  "type": "hiragana", "row": 5, "strokeCount": 1 },
+
+  { "id": "ha",  "unicode": "は", "romaji": "ha",  "type": "hiragana", "row": 6, "strokeCount": 3 },
+  { "id": "hi",  "unicode": "ひ", "romaji": "hi",  "type": "hiragana", "row": 6, "strokeCount": 2 },
+  { "id": "fu",  "unicode": "ふ", "romaji": "fu",  "type": "hiragana", "row": 6, "strokeCount": 4 },
+  { "id": "he",  "unicode": "へ", "romaji": "he",  "type": "hiragana", "row": 6, "strokeCount": 1 },
+  { "id": "ho",  "unicode": "ほ", "romaji": "ho",  "type": "hiragana", "row": 6, "strokeCount": 4 },
+
+  { "id": "ma",  "unicode": "ま", "romaji": "ma",  "type": "hiragana", "row": 7, "strokeCount": 3 },
+  { "id": "mi",  "unicode": "み", "romaji": "mi",  "type": "hiragana", "row": 7, "strokeCount": 2 },
+  { "id": "mu",  "unicode": "む", "romaji": "mu",  "type": "hiragana", "row": 7, "strokeCount": 3 },
+  { "id": "me",  "unicode": "め", "romaji": "me",  "type": "hiragana", "row": 7, "strokeCount": 2 },
+  { "id": "mo",  "unicode": "も", "romaji": "mo",  "type": "hiragana", "row": 7, "strokeCount": 3 },
+
+  { "id": "ya",  "unicode": "や", "romaji": "ya",  "type": "hiragana", "row": 8, "strokeCount": 3 },
+  { "id": "yu",  "unicode": "ゆ", "romaji": "yu",  "type": "hiragana", "row": 8, "strokeCount": 2 },
+  { "id": "yo",  "unicode": "よ", "romaji": "yo",  "type": "hiragana", "row": 8, "strokeCount": 2 },
+
+  { "id": "ra",  "unicode": "ら", "romaji": "ra",  "type": "hiragana", "row": 9, "strokeCount": 2 },
+  { "id": "ri",  "unicode": "り", "romaji": "ri",  "type": "hiragana", "row": 9, "strokeCount": 2 },
+  { "id": "ru",  "unicode": "る", "romaji": "ru",  "type": "hiragana", "row": 9, "strokeCount": 2 },
+  { "id": "re",  "unicode": "れ", "romaji": "re",  "type": "hiragana", "row": 9, "strokeCount": 2 },
+  { "id": "ro",  "unicode": "ろ", "romaji": "ro",  "type": "hiragana", "row": 9, "strokeCount": 1 },
+
+  { "id": "wa",  "unicode": "わ", "romaji": "wa",  "type": "hiragana", "row": 10, "strokeCount": 2 },
+  { "id": "wo",  "unicode": "を", "romaji": "wo",  "type": "hiragana", "row": 10, "strokeCount": 3 },
+
+  { "id": "n",   "unicode": "ん", "romaji": "n",   "type": "hiragana", "row": 11, "strokeCount": 1 },
+
+  { "id": "a_k",   "unicode": "ア", "romaji": "a",   "type": "katakana", "row": 1, "strokeCount": 2 },
+  { "id": "i_k",   "unicode": "イ", "romaji": "i",   "type": "katakana", "row": 1, "strokeCount": 2 },
+  { "id": "u_k",   "unicode": "ウ", "romaji": "u",   "type": "katakana", "row": 1, "strokeCount": 3 },
+  { "id": "e_k",   "unicode": "エ", "romaji": "e",   "type": "katakana", "row": 1, "strokeCount": 3 },
+  { "id": "o_k",   "unicode": "オ", "romaji": "o",   "type": "katakana", "row": 1, "strokeCount": 3 },
+
+  { "id": "ka_k",  "unicode": "カ", "romaji": "ka",  "type": "katakana", "row": 2, "strokeCount": 2 },
+  { "id": "ki_k",  "unicode": "キ", "romaji": "ki",  "type": "katakana", "row": 2, "strokeCount": 3 },
+  { "id": "ku_k",  "unicode": "ク", "romaji": "ku",  "type": "katakana", "row": 2, "strokeCount": 2 },
+  { "id": "ke_k",  "unicode": "ケ", "romaji": "ke",  "type": "katakana", "row": 2, "strokeCount": 3 },
+  { "id": "ko_k",  "unicode": "コ", "romaji": "ko",  "type": "katakana", "row": 2, "strokeCount": 2 },
+
+  { "id": "sa_k",  "unicode": "サ", "romaji": "sa",  "type": "katakana", "row": 3, "strokeCount": 3 },
+  { "id": "shi_k", "unicode": "シ", "romaji": "shi", "type": "katakana", "row": 3, "strokeCount": 3 },
+  { "id": "su_k",  "unicode": "ス", "romaji": "su",  "type": "katakana", "row": 3, "strokeCount": 2 },
+  { "id": "se_k",  "unicode": "セ", "romaji": "se",  "type": "katakana", "row": 3, "strokeCount": 3 },
+  { "id": "so_k",  "unicode": "ソ", "romaji": "so",  "type": "katakana", "row": 3, "strokeCount": 2 },
+
+  { "id": "ta_k",  "unicode": "タ", "romaji": "ta",  "type": "katakana", "row": 4, "strokeCount": 3 },
+  { "id": "chi_k", "unicode": "チ", "romaji": "chi", "type": "katakana", "row": 4, "strokeCount": 3 },
+  { "id": "tsu_k", "unicode": "ツ", "romaji": "tsu", "type": "katakana", "row": 4, "strokeCount": 3 },
+  { "id": "te_k",  "unicode": "テ", "romaji": "te",  "type": "katakana", "row": 4, "strokeCount": 3 },
+  { "id": "to_k",  "unicode": "ト", "romaji": "to",  "type": "katakana", "row": 4, "strokeCount": 2 },
+
+  { "id": "na_k",  "unicode": "ナ", "romaji": "na",  "type": "katakana", "row": 5, "strokeCount": 2 },
+  { "id": "ni_k",  "unicode": "ニ", "romaji": "ni",  "type": "katakana", "row": 5, "strokeCount": 2 },
+  { "id": "nu_k",  "unicode": "ヌ", "romaji": "nu",  "type": "katakana", "row": 5, "strokeCount": 2 },
+  { "id": "ne_k",  "unicode": "ネ", "romaji": "ne",  "type": "katakana", "row": 5, "strokeCount": 4 },
+  { "id": "no_k",  "unicode": "ノ", "romaji": "no",  "type": "katakana", "row": 5, "strokeCount": 1 },
+
+  { "id": "ha_k",  "unicode": "ハ", "romaji": "ha",  "type": "katakana", "row": 6, "strokeCount": 3 },
+  { "id": "hi_k",  "unicode": "ヒ", "romaji": "hi",  "type": "katakana", "row": 6, "strokeCount": 2 },
+  { "id": "fu_k",  "unicode": "フ", "romaji": "fu",  "type": "katakana", "row": 6, "strokeCount": 2 },
+  { "id": "he_k",  "unicode": "ヘ", "romaji": "he",  "type": "katakana", "row": 6, "strokeCount": 1 },
+  { "id": "ho_k",  "unicode": "ホ", "romaji": "ho",  "type": "katakana", "row": 6, "strokeCount": 4 },
+
+  { "id": "ma_k",  "unicode": "マ", "romaji": "ma",  "type": "katakana", "row": 7, "strokeCount": 3 },
+  { "id": "mi_k",  "unicode": "ミ", "romaji": "mi",  "type": "katakana", "row": 7, "strokeCount": 3 },
+  { "id": "mu_k",  "unicode": "ム", "romaji": "mu",  "type": "katakana", "row": 7, "strokeCount": 2 },
+  { "id": "me_k",  "unicode": "メ", "romaji": "me",  "type": "katakana", "row": 7, "strokeCount": 2 },
+  { "id": "mo_k",  "unicode": "モ", "romaji": "mo",  "type": "katakana", "row": 7, "strokeCount": 3 },
+
+  { "id": "ya_k",  "unicode": "ヤ", "romaji": "ya",  "type": "katakana", "row": 8, "strokeCount": 3 },
+  { "id": "yu_k",  "unicode": "ユ", "romaji": "yu",  "type": "katakana", "row": 8, "strokeCount": 2 },
+  { "id": "yo_k",  "unicode": "ヨ", "romaji": "yo",  "type": "katakana", "row": 8, "strokeCount": 3 },
+
+  { "id": "ra_k",  "unicode": "ラ", "romaji": "ra",  "type": "katakana", "row": 9, "strokeCount": 2 },
+  { "id": "ri_k",  "unicode": "リ", "romaji": "ri",  "type": "katakana", "row": 9, "strokeCount": 2 },
+  { "id": "ru_k",  "unicode": "ル", "romaji": "ru",  "type": "katakana", "row": 9, "strokeCount": 2 },
+  { "id": "re_k",  "unicode": "レ", "romaji": "re",  "type": "katakana", "row": 9, "strokeCount": 1 },
+  { "id": "ro_k",  "unicode": "ロ", "romaji": "ro",  "type": "katakana", "row": 9, "strokeCount": 2 },
+
+  { "id": "wa_k",  "unicode": "ワ", "romaji": "wa",  "type": "katakana", "row": 10, "strokeCount": 2 },
+  { "id": "wo_k",  "unicode": "ヲ", "romaji": "wo",  "type": "katakana", "row": 10, "strokeCount": 3 },
+
+  { "id": "n_k",   "unicode": "ン", "romaji": "n",   "type": "katakana", "row": 11, "strokeCount": 2 }
+]
