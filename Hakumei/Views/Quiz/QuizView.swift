@@ -8,3 +8,7 @@ struct QuizView: View {
         }
     }
 }
+
+#Preview {
+    QuizView()
+}

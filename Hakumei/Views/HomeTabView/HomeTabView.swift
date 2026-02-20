@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  HomeTabView.swift
 //  Hakumei
 //
 //  Created by Samuel Martins on 19/02/26.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct HomeTabView: View {
     var body: some View {
         TabView {
             LearnView()
@@ -23,4 +23,24 @@ struct ContentView: View {
                 .tabItem { Label("Settings", systemImage: "gearshape.fill") }
         }
     }
+}
+
+#Preview("Home Tab View") {
+    HomeTabView()
+}
+
+#Preview("Learn Tab") {
+    HomeTabView()
+}
+
+#Preview("Quiz Tab") {
+    HomeTabView()
+}
+
+#Preview("Progress Tab") {
+    HomeTabView()
+}
+
+#Preview("Settings Tab") {
+    HomeTabView()
 }

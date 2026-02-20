@@ -9,3 +9,7 @@ struct ProgressTabView: View {
         }
     }
 }
+
+#Preview {
+    ProgressTabView()
+}

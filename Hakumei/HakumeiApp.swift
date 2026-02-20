@@ -13,10 +13,10 @@ struct HakumeiApp: App {
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
             KanaCharacter.self,
-            UserProgress.self,
+			CardProgress.self,
             UserSettings.self,
         ])
-        let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
+        let modelConfiguration = ModelConfiguration(schema: schema)
 
         do {
             return try ModelContainer(for: schema, configurations: [modelConfiguration])
@@ -27,7 +27,7 @@ struct HakumeiApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HomeTabView()
                 .onAppear { seedDataIfNeeded() }
         }
         .modelContainer(sharedModelContainer)
@@ -46,11 +46,12 @@ struct HakumeiApp: App {
         else { return }
 
         for entry in entries {
+			guard let type = KanaType(rawValue: entry.type) else { continue }
             context.insert(KanaCharacter(
                 id: entry.id,
                 unicode: entry.unicode,
                 romaji: entry.romaji,
-                type: entry.type,
+                type: type,
                 row: entry.row,
                 strokeCount: entry.strokeCount
             ))

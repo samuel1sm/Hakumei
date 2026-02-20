@@ -25,7 +25,7 @@ xcodebuild -project Hakumei.xcodeproj clean
 
 Hakumei is a kana (hiragana/katakana) learning app for iOS 26.0, built with SwiftUI + SwiftData. It is fully offline — no networking layer.
 
-**Pattern:** MVVM with Combine for reactive state. ViewModels are `ObservableObject` classes in `ViewModels/`; views in `Views/` own a ViewModel instance via `@StateObject`.
+**Pattern:** MVVM with Combine for reactive state. ViewModels are `@Observable` classes in `ViewModels/`; views in `Views/` own a ViewModel instance via `@StateObject`.
 
 **Persistence:** SwiftData only (no CoreData). Three models:
 - `KanaCharacter` — the 92 kana characters (46 hiragana + 46 katakana), seeded from `Data/kana_data.json` on first launch.

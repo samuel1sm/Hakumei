@@ -8,3 +8,7 @@ struct LearnView: View {
         }
     }
 }
+
+#Preview {
+    LearnView()
+}
