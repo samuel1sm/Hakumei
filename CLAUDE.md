@@ -42,14 +42,14 @@ Hakumei is a kana (hiragana/katakana) learning app for iOS 26.0, built with Swif
 ```
 App/              (reserved for AppDelegate if needed)
 Models/           KanaCharacter, UserProgress, UserSettings
-ViewModels/       One ObservableObject per tab
 Views/
+  HomeTabView/
   Learn/
   Quiz/
   Progress/       ProgressTabView
   Settings/
-  Shared/         Reusable components (KanaCard, AudioButton, etc.)
-Services/         SRSEngine, AudioService, StrokeEvaluator (stubs)
+  Shared/  
+Services/       
 Resources/
   Audio/          .aac pronunciation files (see README)
   Mnemonics/      Mnemonic image assets (see README)
