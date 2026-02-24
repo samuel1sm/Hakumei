@@ -4,7 +4,7 @@ import SwiftUI
 struct HomeView: View {
     var body: some View {
 		NavigationStack {
-			VStack {
+			VStack(alignment: .leading, spacing: 20) {
 				ZStack(alignment: .trailing) {
 					Text("日")
 						.font(.hakumei.headerKanji)
@@ -28,11 +28,29 @@ struct HomeView: View {
 				.frame(height: 220)
 				.padding(.horizontal)
 				.background(.backgroundHeader)
+				VStack(alignment: .leading, spacing: 16) {
+					Text("Your progress")
+						.font(.hakumei.sectionTitle)
+						.foregroundStyle(.textPrimary)
+					
+					KanaCardProgressView(
+						title: "Hiragana",
+						progress: "32 / 46 characters",
+						previewText: "あいう",
+						progressValue: 0.5
+					)
+
+				}.padding(.horizontal)
+				Spacer()
 			}
+			.frame(alignment: .leading)
+			.background(.backgroundPrimary)
         }
     }
 }
 
+
 #Preview {
     HomeView()
 }
+
