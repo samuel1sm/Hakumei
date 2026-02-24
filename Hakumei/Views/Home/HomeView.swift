@@ -8,8 +8,7 @@ struct HomeView: View {
 				VStack {
 					Text("かな · HAKUMEI")
 				}.frame(maxWidth: .infinity)
-					.background(.red)
-
+					.background(.backgroundHeader)
 			}
         }
     }
