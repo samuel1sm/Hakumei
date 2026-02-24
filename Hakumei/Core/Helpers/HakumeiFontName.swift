@@ -129,7 +129,7 @@ struct HakumeiFont {
 	/// 18pt · Shippori Mincho SemiBold
 	/// Section labels — "Your Progress", "Learn New"
 	var sectionTitle: Font {
-		.custom(HakumeiFontName.displaySemiBold, size: 18, relativeTo: .title3)
+		.custom(HakumeiFontName.displaySemiBold, size: 24, relativeTo: .title3)
 	}
 
 	// ── UI Text ────────────────────────────────────────────────────────
