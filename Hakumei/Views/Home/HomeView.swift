@@ -1,7 +1,7 @@
 import SwiftUI
 
 // Named ProgressTabView to avoid shadowing SwiftUI's built-in ProgressView.
-struct ProgressTabView: View {
+struct HomeView: View {
     var body: some View {
         NavigationStack {
             Text("Coming soon")
@@ -11,5 +11,5 @@ struct ProgressTabView: View {
 }
 
 #Preview {
-    ProgressTabView()
+    HomeView()
 }

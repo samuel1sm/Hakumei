@@ -1,22 +1,15 @@
-//
-//  HomeTabView.swift
-//  Hakumei
-//
-//  Created by Samuel Martins on 19/02/26.
-//
-
 import SwiftUI
 
-struct HomeTabView: View {
+struct MainTabView: View {
     var body: some View {
         TabView {
             LearnView()
-                .tabItem { Label("Learn", systemImage: "book.fill") }
+                .tabItem { Label("Home", systemImage: "book.fill") }
 
             QuizView()
                 .tabItem { Label("Quiz", systemImage: "checkmark.circle.fill") }
 
-            ProgressTabView()
+            HomeView()
                 .tabItem { Label("Progress", systemImage: "chart.bar.fill") }
 
             SettingsView()
@@ -26,21 +19,21 @@ struct HomeTabView: View {
 }
 
 #Preview("Home Tab View") {
-    HomeTabView()
+    MainTabView()
 }
 
 #Preview("Learn Tab") {
-    HomeTabView()
+    MainTabView()
 }
 
 #Preview("Quiz Tab") {
-    HomeTabView()
+    MainTabView()
 }
 
 #Preview("Progress Tab") {
-    HomeTabView()
+    MainTabView()
 }
 
 #Preview("Settings Tab") {
-    HomeTabView()
+    MainTabView()
 }

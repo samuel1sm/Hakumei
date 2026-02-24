@@ -27,7 +27,7 @@ struct HakumeiApp: App {
 
     var body: some Scene {
         WindowGroup {
-            HomeTabView()
+            MainTabView()
                 .onAppear { seedDataIfNeeded() }
         }
         .modelContainer(sharedModelContainer)
