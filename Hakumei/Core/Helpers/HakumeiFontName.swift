@@ -26,6 +26,7 @@ enum HakumeiFontName {
 	static let displayRegular  = "ShipporiMincho-Regular"    // weight 400
 
 	// UI — DM Sans (clean, modern sans-serif)
+	static let uiBold = "DMSans-Bold"   // weight 800
 	static let uiSemiBold = "DMSans-SemiBold"   // weight 600
 	static let uiMedium   = "DMSans-Medium"      // weight 500
 	static let uiRegular  = "DMSans-Regular"     // weight 400
@@ -35,26 +36,26 @@ enum HakumeiFontName {
 }
 
 // ─────────────────────────────────────────────
-// MARK: - Font Scale (8pt grid)
+// MARK: - Font Scale (increased for better readability)
 // ─────────────────────────────────────────────
 //
-//  10  · captionSmall  — romaji under grid cells, SRS intervals
-//  11  · caption       — chip labels "DAILY REVIEW" (SemiBold, tracked)
-//  12  · label         — rating buttons "Again / Hard / Good / Easy"
-//  13  · bodySmall     — hints, examples, counter "3/12", app label
-//  14  · body          — card subtitles, vocabulary words
-//  15  · cardTitle     — card heading text
-//  16  · button        — CTA buttons
-//  18  · sectionTitle  — "Your Progress", "Learn New"
-//  20  · kanaPreview   — progress card kana preview "あいう"
-//  24  · kanaCell      — lesson grid cells
-//  28  · display28     — ghost kana watermark, detail panel romaji
-//  32  · title2        — "Session Complete!", stat numbers "9 / 3 / 75%"
-//  36  · title1        — home greeting "Good morning, Alex さん"
-//  48  · kanaHero      — daily review count "12"
-//  52  · romajiDisplay — flashcard back romaji "ki"
-//  80  · kanaLarge     — lesson detail panel selected character
-//  96  · kanaDisplay   — flashcard front main character
+//  12  · captionSmall  — romaji under grid cells, SRS intervals
+//  13  · caption       — chip labels "DAILY REVIEW" (SemiBold, tracked)
+//  14  · label         — rating buttons "Again / Hard / Good / Easy"
+//  15  · bodySmall     — hints, examples, counter "3/12", app label
+//  16  · body          — card subtitles, vocabulary words
+//  17  · cardTitle     — card heading text
+//  18  · button        — CTA buttons
+//  22  · sectionTitle  — "Your Progress", "Learn New"
+//  24  · kanaPreview   — progress card kana preview "あいう"
+//  28  · kanaCell      — lesson grid cells
+//  32  · display28     — ghost kana watermark, detail panel romaji
+//  36  · title2        — "Session Complete!", stat numbers "9 / 3 / 75%"
+//  40  · title1        — home greeting "Good morning, Alex さん"
+//  56  · kanaHero      — daily review count "12"
+//  60  · romajiDisplay — flashcard back romaji "ki"
+//  88  · kanaLarge     — lesson detail panel selected character
+// 104  · kanaDisplay   — flashcard front main character
 //
 // ─────────────────────────────────────────────
 
@@ -66,132 +67,132 @@ struct HakumeiFont {
 
 	// ── Kana / Japanese Characters ─────────────────────────────────────
 
-	/// 96pt · Shippori Mincho Bold
+	/// 104pt · Shippori Mincho Bold
 	/// Flashcard front — main kana character
 	var kanaDisplay: Font {
-		.custom(HakumeiFontName.displayBold, size: 96, relativeTo: .largeTitle)
+		.custom(HakumeiFontName.displayBold, size: 104, relativeTo: .largeTitle)
 	}
 
-	/// 80pt · Shippori Mincho Bold
+	/// 88pt · Shippori Mincho Bold
 	/// Lesson detail panel — selected kana character
 	var kanaLarge: Font {
-		.custom(HakumeiFontName.displayBold, size: 80, relativeTo: .largeTitle)
+		.custom(HakumeiFontName.displayBold, size: 88, relativeTo: .largeTitle)
 	}
 
-	/// 48pt · Shippori Mincho Bold
+	/// 56pt · Shippori Mincho Bold
 	/// Home dashboard — daily review count number
 	var kanaHero: Font {
-		.custom(HakumeiFontName.displayBold, size: 48, relativeTo: .title)
+		.custom(HakumeiFontName.displayBold, size: 56, relativeTo: .title)
 	}
 
-	/// 24pt · Shippori Mincho SemiBold
+	/// 28pt · Shippori Mincho SemiBold
 	/// Lesson grid cells — each character
 	var kanaCell: Font {
-		.custom(HakumeiFontName.displaySemiBold, size: 24, relativeTo: .title2)
+		.custom(HakumeiFontName.displaySemiBold, size: 28, relativeTo: .title2)
 	}
 
-	/// 20pt · Shippori Mincho Regular
+	/// 24pt · Shippori Mincho Regular
 	/// Progress card kana preview ("あいう", "アイウ")
 	var kanaPreview: Font {
-		.custom(HakumeiFontName.displayRegular, size: 20, relativeTo: .title3)
+		.custom(HakumeiFontName.displayRegular, size: 24, relativeTo: .title3)
 	}
 
 	// ── Romaji ─────────────────────────────────────────────────────────
 
-	/// 52pt · Shippori Mincho Bold
+	/// 60pt · Shippori Mincho Bold
 	/// Flashcard back — large romaji answer ("ki", "sa")
 	var romajiDisplay: Font {
-		.custom(HakumeiFontName.displayBold, size: 52, relativeTo: .largeTitle)
+		.custom(HakumeiFontName.displayBold, size: 60, relativeTo: .largeTitle)
 	}
 
-	/// 28pt · Shippori Mincho Bold
+	/// 32pt · Shippori Mincho Bold
 	/// Shared: lesson detail panel romaji + ghost kana watermark on flashcard back
 	/// Previously `romajiLarge` and `kanaGhost` — same size & weight, consolidated.
 	var display28: Font {
-		.custom(HakumeiFontName.displayBold, size: 28, relativeTo: .title2)
+		.custom(HakumeiFontName.displayBold, size: 32, relativeTo: .title2)
 	}
 
 	// ── Titles & Headings ──────────────────────────────────────────────
 
-	/// 36pt · Shippori Mincho Bold
+	/// 40pt · Shippori Mincho Bold
 	/// Home header — "Good morning, Alex さん"
 	var title1: Font {
-		.custom(HakumeiFontName.displayBold, size: 36, relativeTo: .largeTitle)
+		.custom(HakumeiFontName.displayBold, size: 40, relativeTo: .largeTitle)
 	}
 
-	/// 32pt · Shippori Mincho Bold
+	/// 36pt · Shippori Mincho Bold
 	/// Shared: session summary title "Session Complete!" + stat numbers "9 / 3 / 75%"
 	/// Previously `title2` and `statNumber` — same size & weight, consolidated.
 	var title2: Font {
-		.custom(HakumeiFontName.displayBold, size: 32, relativeTo: .title)
+		.custom(HakumeiFontName.displayBold, size: 36, relativeTo: .title)
 	}
 
-	/// 18pt · Shippori Mincho SemiBold
+	/// 22pt · Shippori Mincho SemiBold
 	/// Section labels — "Your Progress", "Learn New"
 	var sectionTitle: Font {
-		.custom(HakumeiFontName.displaySemiBold, size: 24, relativeTo: .title3)
+		.custom(HakumeiFontName.displaySemiBold, size: 22, relativeTo: .title3)
 	}
 
 	// ── UI Text ────────────────────────────────────────────────────────
 
 	var headerKanji: Font {
-		.custom(HakumeiFontName.displayBold, size: 180, relativeTo: .body)
+		.custom(HakumeiFontName.displayBold, size: 200, relativeTo: .body)
 	}
 
-	/// 16pt · DM Sans SemiBold
+	/// 18pt · DM Sans SemiBold
 	/// CTA buttons — "Practice These 5 Characters →", "Back to Home"
 	var button: Font {
-		.custom(HakumeiFontName.uiSemiBold, size: 16, relativeTo: .body)
+		.custom(HakumeiFontName.uiSemiBold, size: 18, relativeTo: .body)
 	}
 
-	/// 15pt · DM Sans SemiBold
+	/// 17pt · DM Sans SemiBold
 	/// Card titles — "Hiragana", "Katakana", "Hiragana — Row さ"
 	var cardTitle: Font {
-		.custom(HakumeiFontName.uiSemiBold, size: 15, relativeTo: .body)
+		.custom(HakumeiFontName.uiBold, size: 17, relativeTo: .body)
 	}
 
-	/// 14pt · DM Sans Medium
+	/// 16pt · DM Sans Medium
 	/// Body text — "cards due today", vocabulary words on flashcard back
 	var body: Font {
-		.custom(HakumeiFontName.uiMedium, size: 14, relativeTo: .body)
+		.custom(HakumeiFontName.uiMedium, size: 16, relativeTo: .body)
 	}
 
-	/// 13pt · DM Sans Regular
+	/// 15pt · DM Sans Regular
 	/// Shared: secondary body (hints, mnemonic text) + counter "3 / 12"
 	/// Previously `bodySmall` and `counter` — same size & weight, consolidated.
 	var bodySmall: Font {
-		.custom(HakumeiFontName.uiRegular, size: 13, relativeTo: .callout)
+		.custom(HakumeiFontName.uiRegular, size: 15, relativeTo: .callout)
 	}
 
-	/// 13pt · DM Sans SemiBold · use with tracking 3.0
+	/// 15pt · DM Sans SemiBold · use with tracking 3.0
 	/// App label "かな · HAKUMEI", row chip "Hiragana · Row さ"
 	var appLabel: Font {
-		.custom(HakumeiFontName.uiSemiBold, size: 13, relativeTo: .footnote)
+		.custom(HakumeiFontName.uiSemiBold, size: 15, relativeTo: .footnote)
 	}
 
-	/// 12pt · DM Sans Medium
+	/// 14pt · DM Sans Medium
 	/// Rating button labels — "Again", "Hard", "Good", "Easy"
 	var label: Font {
-		.custom(HakumeiFontName.uiMedium, size: 12, relativeTo: .footnote)
+		.custom(HakumeiFontName.uiMedium, size: 14, relativeTo: .footnote)
 	}
 
-	/// 11pt · DM Sans SemiBold · use with tracking 1.5
+	/// 13pt · DM Sans SemiBold · use with tracking 1.5
 	/// Chip labels — "DAILY REVIEW", "HOW WELL DID YOU REMEMBER?"
 	var caption: Font {
-		.custom(HakumeiFontName.uiSemiBold, size: 11, relativeTo: .caption)
+		.custom(HakumeiFontName.uiSemiBold, size: 13, relativeTo: .caption)
 	}
 
-	/// 11pt · DM Sans Medium
+	/// 13pt · DM Sans Medium
 	/// Bottom tab bar labels — "Home", "Learn", "Stats", "Settings"
 	/// Same size as `caption` but Regular weight — intentionally different.
 	var tabLabel: Font {
-		.custom(HakumeiFontName.uiMedium, size: 11, relativeTo: .caption)
+		.custom(HakumeiFontName.uiMedium, size: 13, relativeTo: .caption)
 	}
 
-	/// 10pt · DM Sans Regular
+	/// 12pt · DM Sans Regular
 	/// Romaji under kana grid cells, SRS interval hints ("+1 day")
 	var captionSmall: Font {
-		.custom(HakumeiFontName.uiRegular, size: 10, relativeTo: .caption2)
+		.custom(HakumeiFontName.uiRegular, size: 12, relativeTo: .caption2)
 	}
 }
 
