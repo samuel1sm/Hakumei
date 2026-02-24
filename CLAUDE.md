@@ -53,6 +53,9 @@ Services/
 Resources/
   Audio/          .aac pronunciation files (see README)
   Mnemonics/      Mnemonic image assets (see README)
+Core/
+  Components/
+  Helpers/
 Data/             kana_data.json
 ```
 
