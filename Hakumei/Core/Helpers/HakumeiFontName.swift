@@ -134,6 +134,10 @@ struct HakumeiFont {
 
 	// ── UI Text ────────────────────────────────────────────────────────
 
+	var headerKanji: Font {
+		.custom(HakumeiFontName.displayBold, size: 180, relativeTo: .body)
+	}
+
 	/// 16pt · DM Sans SemiBold
 	/// CTA buttons — "Practice These 5 Characters →", "Back to Home"
 	var button: Font {
