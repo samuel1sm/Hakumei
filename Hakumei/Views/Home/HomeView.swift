@@ -22,6 +22,13 @@ struct HomeView: View {
 						progressValue: 0.5
 					)
 
+					KanaCardProgressView(
+						title: "Katakana",
+						progress: "32 / 46 characters",
+						previewText: "アイウ",
+						progressValue: 0.5
+					)
+
 				}.padding(.horizontal)
 				Spacer()
 			}
