@@ -139,6 +139,10 @@ struct HakumeiFont {
 		.custom(HakumeiFontName.displayBold, size: 200, relativeTo: .body)
 	}
 
+	var dailyKanji: Font {
+		.custom(HakumeiFontName.displayBold, size: 180, relativeTo: .body)
+	}
+
 	/// 18pt · DM Sans SemiBold
 	/// CTA buttons — "Practice These 5 Characters →", "Back to Home"
 	var button: Font {

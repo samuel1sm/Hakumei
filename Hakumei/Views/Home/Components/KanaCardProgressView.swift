@@ -3,6 +3,7 @@ import SwiftUI
 // MARK: - KanaCardProgressView
 
 struct KanaCardProgressView: View {
+
 	let title: String
 	let progress: String
 	let previewText: String

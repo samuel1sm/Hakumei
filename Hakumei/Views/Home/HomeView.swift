@@ -10,8 +10,13 @@ struct HomeView: View {
 						greeting: "Good morning",
 						userName: "Alex"
 					)
-					
+
 					VStack(alignment: .leading, spacing: 16) {
+						DailyReviewView(
+							cardCount: 12,
+							onStartReview: {}
+						)
+
 						Text("Your progress")
 							.font(.hakumei.sectionTitle)
 							.foregroundStyle(.textPrimary)
@@ -45,6 +50,7 @@ struct HomeView: View {
 				}
 				.frame(alignment: .leading)
 			}.background(.backgroundPrimary)
+			.ignoresSafeArea(edges: .top)
         }
     }
 }

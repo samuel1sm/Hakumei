@@ -34,6 +34,7 @@ struct HomeViewHeader: View {
 			.frame(maxWidth: .infinity, alignment: .leading)
 		}
 		.frame(height: 220)
+		.padding(.top, 60)
 		.padding(.horizontal)
 		.background(.backgroundHeader)
 	}
