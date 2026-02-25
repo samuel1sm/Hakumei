@@ -4,36 +4,47 @@ import SwiftUI
 struct HomeView: View {
     var body: some View {
 		NavigationStack {
-			VStack(alignment: .leading, spacing: 20) {
-				HomeViewHeader(
-					greeting: "Good morning",
-					userName: "Alex"
-				)
-				
-				VStack(alignment: .leading, spacing: 16) {
-					Text("Your progress")
-						.font(.hakumei.sectionTitle)
-						.foregroundStyle(.textPrimary)
+			ScrollView {
+				VStack(alignment: .leading, spacing: 20) {
+					HomeViewHeader(
+						greeting: "Good morning",
+						userName: "Alex"
+					)
 					
-					KanaCardProgressView(
-						title: "Hiragana",
-						progress: "32 / 46 characters",
-						previewText: "あいう",
-						progressValue: 0.5
-					)
-
-					KanaCardProgressView(
-						title: "Katakana",
-						progress: "32 / 46 characters",
-						previewText: "アイウ",
-						progressValue: 0.5
-					)
-
-				}.padding(.horizontal)
-				Spacer()
-			}
-			.frame(alignment: .leading)
-			.background(.backgroundPrimary)
+					VStack(alignment: .leading, spacing: 16) {
+						Text("Your progress")
+							.font(.hakumei.sectionTitle)
+							.foregroundStyle(.textPrimary)
+						
+						KanaCardProgressView(
+							title: "Hiragana",
+							progress: "32 / 46 characters",
+							previewText: "あいう",
+							progressValue: 0.5
+						)
+						
+						KanaCardProgressView(
+							title: "Katakana",
+							progress: "32 / 46 characters",
+							previewText: "アイウ",
+							progressValue: 0.5
+						)
+						
+						Text("Learn new")
+							.font(.hakumei.sectionTitle)
+							.foregroundStyle(.textPrimary)
+						
+						HomeLearnCardView(
+							title: "Hiragana — Row か",
+							subtitle: "5 new characters · ~8 min",
+							previewText: "かきくけこ"
+						)
+					}.padding(.horizontal)
+					
+					Spacer()
+				}
+				.frame(alignment: .leading)
+			}.background(.backgroundPrimary)
         }
     }
 }
