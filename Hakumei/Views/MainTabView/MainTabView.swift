@@ -3,14 +3,14 @@ import SwiftUI
 struct MainTabView: View {
     var body: some View {
         TabView {
+			HomeView()
+				.tabItem { Label("Home", systemImage: "house.fill") }
+
             LearnView()
-                .tabItem { Label("Home", systemImage: "book.fill") }
+                .tabItem { Label("Learn", systemImage: "book.fill") }
 
             QuizView()
                 .tabItem { Label("Quiz", systemImage: "checkmark.circle.fill") }
-
-            HomeView()
-                .tabItem { Label("Progress", systemImage: "chart.bar.fill") }
 
             SettingsView()
                 .tabItem { Label("Settings", systemImage: "gearshape.fill") }
