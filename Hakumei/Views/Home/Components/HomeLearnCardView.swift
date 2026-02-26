@@ -23,9 +23,7 @@ struct HomeLearnCardView: View {
 				.tracking(4.0)
 		}
 		.padding(.init(top: 24, leading: 16, bottom: 24, trailing: 16))
-		.background(.backgroundCard)
-		.clipShape(RoundedRectangle(cornerRadius: 16))
-		.shadow(color: .black.opacity(0.08), radius: 8, x: 0, y: 4)
+		.cardStyle()
 	}
 }
 
