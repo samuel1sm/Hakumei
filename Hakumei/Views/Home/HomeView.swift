@@ -1,13 +1,15 @@
 import SwiftUI
 
-// Named ProgressTabView to avoid shadowing SwiftUI's built-in ProgressView.
 struct HomeView: View {
+
+	@State var viewModel = HomeViewModel()
+
     var body: some View {
 		NavigationStack {
 			ScrollView {
 				VStack(alignment: .leading, spacing: 20) {
 					HomeViewHeader(
-						greeting: "Good morning",
+						greeting: viewModel.greatingText,
 						userName: "Alex"
 					)
 
@@ -56,5 +58,7 @@ struct HomeView: View {
 }
 
 #Preview {
-	HomeView()
+	let time = MockTimeService()
+	time.hour = 14
+	return HomeView(viewModel: .init(timeService: time))
 }

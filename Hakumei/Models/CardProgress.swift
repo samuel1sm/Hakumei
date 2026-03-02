@@ -3,6 +3,7 @@ import Foundation
 
 @Model
 final class CardProgress {
+
 	var characterId: String
 	var interval: Int          // days until next review
 	var easeFactor: Double     // starts at 2.5
