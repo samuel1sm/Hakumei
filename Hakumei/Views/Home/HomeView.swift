@@ -1,8 +1,10 @@
 import SwiftUI
+import SwiftData
 
 struct HomeView: View {
 
 	@State var viewModel = HomeViewModel()
+	@Environment(\.modelContext) private var modelContext
 
     var body: some View {
 		NavigationStack {
@@ -25,18 +27,18 @@ struct HomeView: View {
 						
 						KanaCardProgressView(
 							title: "Hiragana",
-							progress: "32 / 46 characters",
+							progress: viewModel.hiraganaCountText,
 							previewText: "あいう",
-							progressValue: 0.5
+							progressValue: viewModel.hiraganaProgress
 						)
 						
 						KanaCardProgressView(
 							title: "Katakana",
-							progress: "32 / 46 characters",
+							progress: viewModel.katakanaCountText,
 							previewText: "アイウ",
-							progressValue: 0.5
+							progressValue: viewModel.katakanaProgress
 						)
-						
+
 						Text("Learn new")
 							.font(.hakumei.sectionTitle)
 							.foregroundStyle(.textPrimary)
@@ -51,14 +53,38 @@ struct HomeView: View {
 					Spacer()
 				}
 				.frame(alignment: .leading)
-			}.background(.backgroundPrimary)
+			}
+			.background(.backgroundPrimary)
 			.ignoresSafeArea(edges: .top)
+			.onAppear {
+				viewModel.loadOnAppear(context: modelContext)
+			}
         }
     }
+}
+
+@MainActor
+fileprivate func makePreviewContainer() -> ModelContainer {
+	let container = try! ModelContainer(
+		for: KanaCharacter.self, CardProgress.self, UserSettings.self,
+		configurations: .init(isStoredInMemoryOnly: true)
+	)
+	
+	// Populate with mock data
+	MockKanaData.populateContext(
+		container.mainContext,
+		hiraganaProgressCount: 10,
+		katakanaProgressCount: 5,
+		includeAllCharacters: true
+	)
+	
+	return container
 }
 
 #Preview {
 	let time = MockTimeService()
 	time.hour = 14
 	return HomeView(viewModel: .init(timeService: time))
+		.modelContainer( makePreviewContainer()
+	)
 }
