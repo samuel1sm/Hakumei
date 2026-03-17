@@ -55,7 +55,7 @@
   { "id": "wo",  "unicode": "を", "romaji": "wo",  "type": "hiragana", "row": 10, "strokeCount": 3 },
 
   { "id": "n",   "unicode": "ん", "romaji": "n",   "type": "hiragana", "row": 11, "strokeCount": 1 },
-
+ 
   { "id": "a_k",   "unicode": "ア", "romaji": "a",   "type": "katakana", "row": 1, "strokeCount": 2 },
   { "id": "i_k",   "unicode": "イ", "romaji": "i",   "type": "katakana", "row": 1, "strokeCount": 2 },
   { "id": "u_k",   "unicode": "ウ", "romaji": "u",   "type": "katakana", "row": 1, "strokeCount": 3 },

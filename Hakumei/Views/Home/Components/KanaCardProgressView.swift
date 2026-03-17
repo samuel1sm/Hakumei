@@ -1,18 +1,14 @@
 import SwiftUI
 
-// MARK: - Card Configuration Modifier
-
-
-
 // MARK: - KanaCardProgressView
 
 struct KanaCardProgressView: View {
 
 	let title: String
 	let progress: String
-	let previewText: String
+	let previewText: String?
 	let progressValue: Double
-	
+
 	var body: some View {
 		VStack(alignment: .leading, spacing: 16) {
 			HStack {
@@ -25,12 +21,19 @@ struct KanaCardProgressView: View {
 						.foregroundStyle(.textSecondary)
 				}
 				Spacer()
-				Text(previewText)
-					.font(.hakumei.kanaPreview)
-					.foregroundStyle(.textSecondary)
-					.tracking(4.0)
+				if let previewText {
+					Text(previewText)
+						.font(.hakumei.kanaPreview)
+						.foregroundStyle(.textSecondary)
+						.tracking(4.0)
+				}
 			}
 			GradientProgressBar(value: progressValue).frame(height: 12)
+			if let previewText, let firstCharacter = previewText.first?.lowercased() {
+				Text("Next: Row \(firstCharacter) · \(previewText.count) new characters  →")
+					.font(.hakumei.bodySmall)
+					.foregroundStyle(.textSecondary)
+			}
 		}
 		.padding(.init(top: 24, leading: 16, bottom: 24, trailing: 16))
 		.cardStyle()

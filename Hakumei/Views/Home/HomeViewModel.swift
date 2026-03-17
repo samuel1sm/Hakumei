@@ -11,6 +11,9 @@ import SwiftData
 	var hiraganaCountText: String = "0 / 46 characters"
 	var katakanaCountText: String = "0 / 46 characters"
 
+	var nextHiraganaRow = "あいうえお"
+	var nextKatakanaRow = " アイウエオ"
+
 	private let timeService: TimeServiceProtocol
 
 	init(timeService: TimeServiceProtocol? = nil) {
@@ -46,7 +49,7 @@ import SwiftData
 		
 		// Create lookup dictionary for fast access
 		let kanaLookup = Dictionary(uniqueKeysWithValues: allKana.map { ($0.id, $0) })
-		
+
 		var hiraganaCount = 0
 		var katakanaCount = 0
 		
@@ -65,5 +68,17 @@ import SwiftData
 		katakanaProgress = Double(katakanaCount) / Double(46)
 		hiraganaCountText = "\(hiraganaCount) / 46 characters"
 		katakanaCountText = "\(katakanaCount) / 46 characters"
+
+		//Discover next kana learning rows
+		var nextRow = (allProgress.filter { kanaLookup[$0.characterId]?.type == .hiragana }.compactMap {
+			kanaLookup[$0.characterId]?.row
+		}.max() ?? 0) + 1
+		nextHiraganaRow = allKana.filter{ $0.row == nextRow && $0.type == .hiragana }.reduce("") { $0 + $1.unicode }
+
+		nextRow = (allProgress.filter { kanaLookup[$0.characterId]?.type == .katakana }.compactMap {
+			kanaLookup[$0.characterId]?.row
+		}.max() ?? 0) + 1
+		nextKatakanaRow = allKana.filter{ $0.row == nextRow && $0.type == .katakana }.reduce("") { $0 + $1.unicode }
 	}
+
 }

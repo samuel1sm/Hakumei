@@ -28,14 +28,14 @@ struct HomeView: View {
 						KanaCardProgressView(
 							title: "Hiragana",
 							progress: viewModel.hiraganaCountText,
-							previewText: "あいう",
+							previewText: viewModel.nextHiraganaRow,
 							progressValue: viewModel.hiraganaProgress
 						)
-						
+
 						KanaCardProgressView(
 							title: "Katakana",
 							progress: viewModel.katakanaCountText,
-							previewText: "アイウ",
+							previewText: viewModel.nextKatakanaRow,
 							progressValue: viewModel.katakanaProgress
 						)
 
@@ -46,7 +46,7 @@ struct HomeView: View {
 						HomeLearnCardView(
 							title: "Hiragana — Row か",
 							subtitle: "5 new characters · ~8 min",
-							previewText: "かきくけこ"
+							previewText: viewModel.nextHiraganaRow
 						)
 					}.padding(.horizontal)
 					
@@ -85,6 +85,5 @@ fileprivate func makePreviewContainer() -> ModelContainer {
 	let time = MockTimeService()
 	time.hour = 14
 	return HomeView(viewModel: .init(timeService: time))
-		.modelContainer( makePreviewContainer()
-	)
+		.modelContainer(makePreviewContainer())
 }

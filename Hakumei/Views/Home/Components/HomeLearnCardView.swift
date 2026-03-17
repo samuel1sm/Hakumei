@@ -1,6 +1,7 @@
 import SwiftUI
 
 struct HomeLearnCardView: View {
+	
 	let title: String
 	let subtitle: String
 	let previewText: String
